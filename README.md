@@ -5,10 +5,11 @@ rattrapage smart city
 Ce package contient un nœud button_gui.py
 
 Lors de l'exécution, une fenêtre apparaît avec un bouton, lorsque le bouton a été cliqué un topic nommé "/button_state" est mis à jour.
+A chaque fois que on appuie sur le button gui il envoie un true ou false et la pastille sera changer par consequence
 
 ## Pour installer ce paquet
 
-clonez-le dans le dossier src de votre espace de travail catkin
+copiez-les dans le dossier src de votre espace de travail catkin
 
 ```sh
 https://github.com/wdazou/smartcity
