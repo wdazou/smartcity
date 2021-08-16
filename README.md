@@ -12,7 +12,7 @@ A chaque fois que on appuie sur le button gui il envoie un true ou false et la p
 copiez-les dans le dossier src de votre espace de travail catkin
 
 ```sh
-https://github.com/wdazou/smartcity
+git clone https://github.com/wdazou/smartcity
 cp -r smartcity/pastilleweb ~/catkin_ws/src
 cp -r smartcity/button_gui ~/catkin_ws/src
 cd ~/catkin_ws
