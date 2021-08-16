@@ -4,7 +4,10 @@
 Ce package contient un nœud button_gui.py
 
 Lors de l'exécution, une fenêtre apparaît avec un bouton, lorsque le bouton a été cliqué un topic nommé "/button_state" est mis à jour.
-A chaque fois que on appuie sur le button gui il envoie un true ou false et la pastille sera changer par consequence
+
+A chaque fois que on appuie sur le button gui il envoie un true ou false et la pastille sera changer par consequence.
+
+Vous pouvez voir le resultat du pastille dans src/web/index.html
 
 ## Pour installer ce paquet
 
