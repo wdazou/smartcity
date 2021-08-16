@@ -26,6 +26,8 @@ dans le cas où le copie marche pas remplace smartcity par 'smartcity-main'
 ## Pour exécuter ce nœud
 Une fois que le fichier d'installation a été sourcé.
 
+Avant de lancer les commandes suivantes il faut donner le droit d'execution sur les fichiers
+
 ```sh
 rosrun button_gui button_node.py
 rosrun pastilleweb httpserver.py
