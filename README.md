@@ -19,6 +19,7 @@ catkin build
 source ~/catkin_ws/devel/setup.bash
 
 ```
+dans le cas où le copie marche pas remplace smartcity par 'smartcity-main'
 ## Pour exécuter ce nœud
 Une fois que le fichier d'installation a été sourcé.
 
