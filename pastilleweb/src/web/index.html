@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Pastille colorée</title>
+        <meta charset="UTF-8">
+	<style>
+            #circle {
+            width: 50px;
+            height: 50px;
+            -webkit-border-radius: 25px;
+            -moz-border-radius: 25px;
+            border-radius: 25px;
+            background: red;
+             display: block;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 20%;
+    
+          }
+        </style>
+    </head>
+    <body>
+        
+      <div id="circle"></div>
+
+      <script>
+        var STYLE = {true:"background:green",false:"background:red"}
+        var circle = document.getElementById("circle");
+
+        //url du cgi qui écoute sur le topic
+        var url = 'cgi-bin/getTopic.py';
+
+
+        function getTopic()
+        {
+            
+            var req = new XMLHttpRequest();
+            req.open("GET",url,true);
+            req.onload = function ()
+            {
+                if (this.status == 200)
+                {
+		console.log(this.response);
+                res = JSON.parse(this.response);
+                //Changer la couleur de la pastille selon la valeur reçue
+                circle.style = STYLE[res.valeur];
+                }
+            }
+            req.send();
+        }
+
+        //verifier le topic chaque 0.5s
+        window.setInterval(getTopic,500);
+        
+
+
+      </script>
+    </body>
+</html>
